@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/sample.png-73f40030e3482bebe744a367ca043621.stex"
+
+[deps]
+
+source_file="res://Game Assets/uipack-rpg/sample.png"
+source_md5="28dc74fa5c160220d99df071ac775a99"
+
+dest_files=[ "res://.import/sample.png-73f40030e3482bebe744a367ca043621.stex" ]
+dest_md5="d90a231d135465923bd5db00db19d158"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

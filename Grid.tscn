@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://OverworldTiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+
+[node name="Grid" type="Node" index="0"]
+
+[node name="TileMap" type="TileMap" parent="." index="0"]
+
+position = Vector2( 1.15234, 2.30469 )
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 128, 128 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 57, 0, 2, 0, 0, 3, 57, 0, 4, 0, 0, 65536, 57, 0, 65537, 0, 0, 65538, 57, 0, 65539, 0, 0, 65540, 57, 0, 131072, 0, 0, 131073, 57, 0, 131074, 0, 0, 131075, 57, 0, 131076, 0, 0, 196608, 57, 0, 196609, 0, 0, 196610, 57, 0, 196611, 0, 0, 196612, 57, 0, 262144, 0, 0, 262145, 57, 0, 262146, 0, 0, 262147, 57, 0, 262148, 0, 0, 327680, 57, 0, 327681, 0, 0, 327682, 57, 0, 327683, 0, 0, 327684, 57, 0, 393216, 0, 0, 393217, 57, 0, 393218, 0, 0, 393219, 57, 0, 393220, 0, 0, 458752, 57, 0, 458753, 0, 0, 458754, 57, 0, 458755, 0, 0, 458756, 57, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Line2D" type="Line2D" parent="." index="1"]
+
+points = PoolVector2Array(  )
+width = 10.0
+default_color = Color( 0.933594, 0.631337, 0.110425, 1 )
+texture_mode = 57640192
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="square" type="Polygon2D" parent="." index="2"]
+
+position = Vector2( 1.15234, -1.15233 )
+polygon = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+uv = PoolVector2Array(  )
+color = Color( 0.96875, 0.138021, 0.138021, 0.25498 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Texture", "Transform" ]
+
+[node name="Player" parent="." index="3" instance=ExtResource( 2 )]
+
+
